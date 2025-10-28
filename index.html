@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Francisco Carrasco — Ingeniero Informático</title>
+  <style>
+    :root {
+      --primary: #0077ff;
+      --bg: #f7f8fa;
+      --text: #1f1f1f;
+      --muted: #555;
+      --card: #fff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Inter", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 15px;
+    }
+
+    .cv {
+      max-width: 880px;
+      margin: auto;
+      background: var(--card);
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      animation: fadeIn 0.7s ease-out;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #005ec2);
+      color: #fff;
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    header h1 { font-size: 2.1em; font-weight: 700; }
+    header h2 { font-weight: 400; opacity: 0.9; margin-top: 6px; }
+
+    .contact {
+      margin-top: 18px;
+      font-size: 0.95em;
+    }
+
+    .contact a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .section {
+      padding: 40px 35px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .section:last-child { border-bottom: none; }
+
+    h3 {
+      font-size: 1.05em;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    h3::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 40px;
+      height: 2px;
+      background: var(--primary);
+    }
+
+    p, li {
+      font-size: 0.95em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    ul { list-style: none; margin-top: 6px; }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .skill {
+      background: #eef3fa;
+      color: #004c91;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      transition: background 0.2s;
+    }
+
+    .skill:hover { background: var(--primary); color: #fff; }
+
+    .footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: #999;
+      padding: 25px 0;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 25px 20px; }
+      .section { padding: 25px 20px; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv">
+    <header>
+      <h1>Francisco Carrasco</h1>
+      <h2>Ingeniero Informático — INACAP</h2>
+      <div class="contact">
+        📍 Santiago, Chile · 
+        📧 <a href="mailto:francisco.carrasco@email.com">francisco.carrasco@email.com</a> · 
+        💼 <a href="https://www.linkedin.com/in/franciscocarrasco" target="_blank">LinkedIn</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h3>Perfil Profesional</h3>
+      <p>
+        Ingeniero Informático con orientación práctica y analítica. Combino experiencia laboral real con proyectos tecnológicos aplicados. 
+        Mi enfoque está en el desarrollo de soluciones de software y sistemas inteligentes que optimicen procesos, 
+        integrando hardware, bases de datos y diseño funcional. Destaco por mi compromiso, adaptabilidad y mentalidad de mejora continua.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>Formación Académica</h3>
+      <p><strong>Ingeniería Informática</strong> — INACAP, Santiago (2020–2025)</p>
+      <p>Formación en desarrollo de software, bases de datos, redes y gestión de proyectos TI.</p>
+    </section>
+
+    <section class="section">
+      <h3>Experiencia Laboral</h3>
+
+      <p><strong>KFC Chile</strong> — Asistente de Operaciones (2023–Actualidad)</p>
+      <ul>
+        <li>Gestión de operaciones part-time, garantizando cumplimiento de tiempos y estándares de calidad.</li>
+        <li>Trabajo en equipo y comunicación efectiva bajo entornos de alta demanda.</li>
+      </ul>
+
+      <p><strong>Supermercado Líder</strong> — Operador Multifuncional (2022–2023)</p>
+      <ul>
+        <li>Apoyo en reposición, atención al cliente y caja.</li>
+        <li>Desarrollo de habilidades organizativas y compromiso laboral.</li>
+      </ul>
+
+      <p><strong>Pioneta Logístico Independiente</strong> — Transporte y Distribución (2020–2021)</p>
+      <ul>
+        <li>Apoyo en carga, descarga y distribución de productos.</li>
+        <li>Gestión eficiente del tiempo y responsabilidad en rutas asignadas.</li>
+      </ul>
+
+      <p><strong>Ayudante de Maestro</strong> — Obras y Mantención (2018–2020)</p>
+      <ul>
+        <li>Apoyo en radieres, pintura, reconstrucción y trabajos de reparación.</li>
+        <li>Desarrollo de habilidades prácticas, trabajo colaborativo y cumplimiento de plazos.</li>
+        <li>Enfoque en responsabilidad, adaptabilidad y mejora continua.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h3>Proyecto Destacado</h3>
+
+      <p><strong>Weigence — Sistema de Inventario Inteligente</strong> (2024–2025)</p>
+      <ul>
+        <li>Desarrollo de un sistema IoT que utiliza sensores de peso para detectar variaciones en inventario.</li>
+        <li>Stack: Flask, Supabase, Tailwind CSS, Raspberry Pi Zero 2 W, HX711 y celdas de carga.</li>
+        <li>Rol: diseño de interfaz, backend, estructura de base de datos y control de versiones en GitHub.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h3>Habilidades Técnicas</h3>
+      <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">Flask / Supabase</span>
+        <span class="skill">HTML / CSS / Tailwind</span>
+        <span class="skill">SQL / PostgreSQL</span>
+        <span class="skill">Git / GitHub</span>
+        <span class="skill">Power BI / Machine Learning</span>
+        <span class="skill">Raspberry Pi / Arduino</span>
+        <span class="skill">Gestión de Proyectos TI</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Competencias Profesionales</h3>
+      <ul>
+        <li>Pensamiento analítico y resolución eficiente de problemas.</li>
+        <li>Adaptabilidad a entornos cambiantes y nuevas tecnologías.</li>
+        <li>Comunicación efectiva y liderazgo colaborativo.</li>
+        <li>Responsabilidad, ética y orientación a resultados.</li>
+      </ul>
+    </section>
+
+    <div class="footer">
+      © 2025 Francisco Carrasco · Currículum Profesional
+    </div>
+  </div>
+</body>
+</html>
